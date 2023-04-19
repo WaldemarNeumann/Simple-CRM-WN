@@ -1,1 +1,63 @@
-/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+body {
+    margin: 0px;
+}
+
+.mat-drawer-container {
+    height: 100vh;
+}
+
+.menuIcon {
+    cursor: pointer;
+}
+
+.sidenav {
+    width: 300px;
+}
+
+.logoContainer {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    align-items: center;
+    min-height: 63px;
+}
+
+.menuList {
+    list-style-type: none;
+    padding-left: 0px;
+    margin-top: 0px;
+    li {
+        display: flex;
+        align-items: center;
+        padding-left: 16px;
+        padding-right: 16px;
+        height: 48px;
+        cursor: pointer;
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.04);
+        }
+    }
+}
+
+.mat-icon {
+    margin-right: 10px;
+}
+
+.routerContainer {
+    padding-left: 56px;
+    padding-top: 16px;
+}
+
+.mr-16 {
+    margin-right: 16px;
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+.dialogContainer {
+    position: relative;
+}
