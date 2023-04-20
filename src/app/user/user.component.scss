@@ -1,3 +1,9 @@
+.matCard {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px !important;
+}
+
 .mat-icon {
     margin-right: 0px;
 }
@@ -6,4 +12,37 @@
     position: absolute;
     right: 56px;
     bottom: 56px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    tr {
+        border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+        &:first-child {
+            cursor: unset;
+            &:hover {
+                background-color: unset;
+            }
+        }
+        &:last-child {
+            border-bottom: 0;
+        }
+        td {
+            height: 48px;
+            &:first-child {
+                padding-left: 16px;
+            }
+        }
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+    }
+    th {
+        text-align: start;
+        &:first-child {
+            padding-left: 16px;
+        }
+    }
 }
